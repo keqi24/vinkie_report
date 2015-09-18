@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>出勤统计系统</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <br />
+        <h3>上传对应的文件</h3>
+        <h5>注意：文件数据需要与前面的提示一致，并尽量使用chrome操作</h5>
+        <br />
+        <form action="fileresult.php" method="post"
+            enctype="multipart/form-data">
+            <label for="other">other:   </label>
+            <input type="file" name="other" id="other" /> 
+            <br />   
+            <br /> 
+            <label for="research">research:</label>
+            <input type="file" name="research" id="research" /> 
+            <br />
+            <br /> 
+            <label for="sale">sale:    </label>
+            <input type="file" name="sale" id="sale" /> 
+            <br />
+            <br /> 
+            <input type="submit" name="提交" value="提交" />
+            </form>
+        
+        <p>
+            说明：上传对应的文件，点击提交，会提示文件下载，
+            下载完成后复制到excel里即可。
+            
+        </p>
+        <br />
+        <br />
+        <br />
+        
+				<br />
+				<br />
+        
+        <h3>如果下载文件有问题，请使用如下方式</h3>
+        <h5>注意：文件数据需要与前面的提示一致</h5>
+        <br />
+        <form action="report.php" method="post"
+            enctype="multipart/form-data">
+            <label for="other">other:   </label>
+            <input type="file" name="other" id="other" /> 
+            <br />   
+            <br /> 
+            <label for="research">research:</label>
+            <input type="file" name="research" id="research" /> 
+            <br />
+            <br /> 
+            <label for="sale">sale:    </label>
+            <input type="file" name="sale" id="sale" /> 
+            <br />
+            <br /> 
+            <input type="submit" name="提交" value="提交" />
+            </form>
+        
+        <p>
+            说明：将网页内容全选(CTRL+A) 、 复制(CTRL+C),
+            然后黏贴到excel里，选择数据，以 分号 分隔。
+            
+        </p>
+        
+        
+    </body>
+</html>
